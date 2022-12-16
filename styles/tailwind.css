@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* body */
+.temp-padding-inline{
+    @apply
+    lg:px-32
+}
+/* nav bar */
+/* .padding-nav-inline{
+    @apply
+    lg:px-32
+    px-4
+} */
+.padding-nav-block{
+    @apply
+    lg:py-8
+    py-2.5
+}
+
+.nav-items-text-size{
+    @apply
+    lg:text-xl
+    text-sm
+}
+.nav-items-title-size{
+    @apply
+    lg:text-2xl
+    text-xl
+}
+.nav-logo{
+    @apply
+    lg:h-12
+    h-8
+
+}
+.nav-logo-margin-right{
+    @apply
+    mr-40
+}
+.nav-border-line{
+    @apply
+    lg:w-3/4
+}
+
+.nav-order{
+    @apply
+    order-2
+    lg:order-last
+}
+
