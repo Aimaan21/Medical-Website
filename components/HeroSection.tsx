@@ -24,7 +24,7 @@ export const HeroSection = () => {
 
   return (
     
-    <div className="temp-padding-inline flex mx-auto bg-backgroud-100">
+    <div className="temp-padding-inline flex mx-auto justify-center bg-backgroud-100">
       <div className="max-w-[800px] block py-20">
         <h1 className="text-primary-50">
           Consult a doctor <br />
@@ -39,10 +39,10 @@ export const HeroSection = () => {
         <AppButton btnColor="bg-white" btnText="Ask A Doctor Online" btnTextColor="text-primary-100" type="button" clicked={(e:any) => setheroBtn(true)}/>
       </div>
 
-      <div className="bg-primary px-60 flex">
-        <div className="self-end">
-        <AppButton btnColor="bg-white" btnText="2210 DOCTORS ONLINE" btnTextColor="text-black" type="button" clicked={(e:any) => setheroBtnSub(true)}/>
-        <img src="doctor-image.png" className="h-[600px] self-end ml-20"></img>
+      <div className="bg-primary px-[80px] flex">
+        <div className="self-end relative">
+        <AppButton btnColor="bg-white" btnText="2210 DOCTORS ONLINE" btnTextColor="text-black" type="button" className="absolute mt-[-20px]" clicked={(e:any) => setheroBtnSub(true)}/>
+        <img src="doctor-image.png" className="lg:h-[600px] lg:w-[650px] self-end ml-20"></img>
         </div>
         
       </div>

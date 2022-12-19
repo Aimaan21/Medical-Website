@@ -14,6 +14,8 @@ export function About() {
            titleTxtColor='text-primary-50'
            titleTxtSize='text-3xl'
            wrapperBgColor='bg-cardWrap-50'
+           imgSrc="favicon.ico"
+
            /> 
            <Card 
            title='Private & Secure' 
@@ -22,6 +24,7 @@ export function About() {
            titleTxtSize='text-3xl'
 
            wrapperBgColor='bg-cardWrap-50'
+           imgSrc="favicon.ico"
            /> 
            <Card 
            title='Million Customers ' 
@@ -29,6 +32,7 @@ export function About() {
            titleTxtColor='text-primary-50'
            titleTxtSize='text-3xl'
            wrapperBgColor='bg-cardWrap-50'
+           imgSrc="favicon.ico"
            /> 
            <Card 
            title='Chatbot Support' 
@@ -36,6 +40,7 @@ export function About() {
            titleTxtColor='text-primary-50'
            titleTxtSize='text-3xl'
            wrapperBgColor='bg-cardWrap-50'
+           imgSrc="favicon.ico"
            /> 
            
         </div>

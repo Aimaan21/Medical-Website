@@ -1,8 +1,9 @@
+// import { Navbar } from "flowbite-react";
 export const Navbar = () => {
   return (
     <>
-      <nav className="temp-padding-inline padding-nav-block bg-white border-gray-200 rounded dark:bg-gray-900">
-        <div className="flex flex-wrap items-center ">
+      <nav className="temp-padding-inline padding-nav-block  bg-white border-gray-200 rounded dark:bg-gray-900">
+        <div className="flex flex-wrap justify-center items-center ">
           <a
             href="https://flowbite.com/"
             className="flex items-center nav-logo-margin-right"
@@ -51,10 +52,10 @@ export const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#about-section"
+                  href="#specialist"
                   className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  About
+                  Service
                 </a>
               </li>
               <li>
@@ -62,7 +63,7 @@ export const Navbar = () => {
                   href="#online-chat-section"
                   className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Online Chat
+                  Question and Answers
                 </a>
               </li>
               <li>
@@ -70,15 +71,15 @@ export const Navbar = () => {
                   href="#"
                   className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Pricing
+                  Consultation
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#article-section"
                   className="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  Contact
+                  Articles
                 </a>
               </li>
             </ul>

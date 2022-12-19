@@ -30,22 +30,16 @@ module.exports = {
 					300:"#FEEBDC"   //textColor
 				},
 				cardWrap: {
-					// Violoet
+					
 					50: "#FCFCFC",
 					
 				},
-				// GoldLime
+				// for article section
 				secondary: {
-					50: "#f7f7ee",
-					100: "#e7e7cb",
-					200: "#d6d7a8",
-					300: "#c6c785",
-					400: "#b6b762",
-					500: "#9c9d48",
-					600: "#7a7a38",
-					700: "#575728",
-					800: "#343418",
-					900: "#111108",
+					50: "#F6BFC0",
+					100: "#E4E4E4",
+					200: "#F4F3F1"
+					
 				}
 			}
 		}
