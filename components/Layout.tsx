@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AppButton from "./AppButton";
+import Footer from "./Footer";
 import  { Navbar } from './Navbar'
 
 export const Layout = ({ children }: any) => {
@@ -17,6 +18,7 @@ export const Layout = ({ children }: any) => {
         <Navbar />
         
           {children}
+        <Footer/>
         </main>
         <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
      

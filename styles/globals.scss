@@ -1,6 +1,6 @@
 @import './tailwind.css';
 @import './typeset.scss';
-@import url('https://fonts.googleapis.com/css?family=Outfit:400');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
 
 /* html {} 16px */
 
@@ -11,7 +11,7 @@ body {
   font-family: 'Outfit', sans-serif;
   font-weight: 400;
   line-height: 1.75;
-  font-size: 100%;
+  font-size: 18px;
   overflow-x: hidden;
 }
 
@@ -19,7 +19,13 @@ body {
   box-sizing: border-box;
 }
 
-
+#hero-section {
+  background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(254,243,234,1) 100%);
+  img.hero-img {
+    transform: scale(1.25);
+    transform-origin: bottom left;
+  }
+}
 
 @media (prefers-color-scheme: dark) {
   html {

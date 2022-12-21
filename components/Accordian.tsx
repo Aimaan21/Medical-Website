@@ -13,17 +13,17 @@ export function Accordian({
           <>
             <Disclosure.Button className="flex justify-between w-full px-16 py-12 text-sm font-medium text-left text-primary-900 rounded hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
               <h4
-                className={`mt-0 text-2xl font-semibold leading-7 transition  text-primary-50 dark:text-white mr-1`}
+                className={`mt-0 text-2xl font-semibold leading-7 transition  text-primary-100 dark:text-white mr-1`}
               >
                 {title}
               </h4>
               <Icon
-                iconColor="bg-primary-100"
+                iconColor="bg-primary-50"
                 iconSize="35px"
                 iconName="chevron-down.png"
                 className={`${
                   open ? "transform rotate-180" : ""
-                } text-primary-500 p-2 bg-primary-100 rounded-full`}
+                } text-primary-500 p-2 bg-primary-50 rounded-full`}
               />
             </Disclosure.Button>
             <Disclosure.Panel className="p-8 text-xl text-left  text-slate-600 font-normal">

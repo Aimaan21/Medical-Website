@@ -23,9 +23,9 @@ module.exports = {
 					100:"#FEF3EA"
 				},
 				primary: {
-					// Violoet
-					50: "#1E144F",
-					100: "#72569D",
+					// Violet
+					50: "#72569D",
+					100: "#1E144F",
 					200: "#CAC2CB",
 					300:"#FEEBDC"   //textColor
 				},
@@ -36,9 +36,10 @@ module.exports = {
 				},
 				// for article section
 				secondary: {
-					50: "#F6BFC0",
+					50: "#F6BFC0",//pink(article-bg)
 					100: "#E4E4E4",
-					200: "#F4F3F1"
+					200: "#F4F3F1",
+					300:"#A9CAE7",
 					
 				}
 			}

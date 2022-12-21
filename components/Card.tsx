@@ -27,17 +27,15 @@ export interface cardModel {
 function Card({
   title = "kjhfkjdahkjhkf",
   body = "afjkhfkahkf",
-  titleTxtSize = "text-3xl",
-  bodyTxtSize = "text-xl",
-  titleTxtColor = "text-primary-50",
-  bodyTxtColor = "",
+  titleTxtSize = "text-xl md:text-2xl lg:text-3xl",
+  titleTxtColor = "text-primary-100",
   wrapperBgColor = "bg-white",
   haveBody = true,
   hasImage = true,
   imgSrc = "favicon.ico",
-  imgHeight = "h-20",
+  imgHeight = "h-10 md:15 lg:h-20",
   textAlign = "text-center",
-  wrapperPaddingTop = "pt-8",
+  wrapperPaddingTop = "pt-4 lg:pt-8",
   wrapperMaxWidth = "",
   wrapperBorder = "rounded-2xl",
   imgBgColor = "bg-white",
@@ -45,34 +43,36 @@ function Card({
   imageTagTxt = "default",
   hasFooter=false,
   footerTitle="Default title",
-  footerBody="This is footer body"
+  footerBody="This is footer body",
+  titleClass="",
+  bodyClass=""
 }) {
   return (
-    // <div className=" text-center flex pt-8 flex-col items-center  max-w-sm  mx-6 bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+    // <div className="flex flex-col items-center max-w-sm pt-8 mx-6 text-center bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
     <div
-      className={`min-w-[220px] ${textAlign} ${wrapperMaxWidth} flex ${wrapperPaddingTop} flex-col items-center my-8 mx-6 ${wrapperBgColor} ${wrapperBorder} shadow-md dark:bg-gray-800 hover:bg-white dark:border-gray-700`}
+      className={`lg:min-w-[220px] ${textAlign} ${wrapperMaxWidth} flex ${wrapperPaddingTop} flex-col items-center  ${wrapperBgColor} ${wrapperBorder} shadow-xl dark:bg-gray-800 hover:bg-white dark:border-gray-700`}
     >
       <div className="relative">
         {hasImageTag && (
-          <p className=" ml-4 mt-4 absolute backdrop-blur-md backdrop-grayscale font-thin px-4 py-1 bg-slate-300 text-xl text-white rounded-md">
+          <p className="absolute px-4 py-1 mt-4 ml-4 text-xl font-thin text-white rounded-md backdrop-blur-md backdrop-grayscale bg-slate-300">
             {imageTagTxt}
           </p>
         )}
 
         {hasImage && (
           <img
-            className={` pt-5 rounded-t-lg object-cover object-center ${imgHeight} w-max ${imgBgColor}`}
+            className={` lg:pt-5 rounded-t-lg object-cover object-center ${imgHeight} w-max ${imgBgColor}`}
             src={`${imgSrc} `}
             alt=""
           />
         )}
       </div>
 
-      <div className="py-4 px-4">
+      <div className="px-2 py-2 lg:py-4 lg:px-4">
         <a href="#">
-          {/* <h5 className='mt-0 text-2xl font-semibold tracking-tight leading-7 transition "${titleTxtColor}" hover:text-primary-600 dark:text-white'>{title}</h5> */}
+          {/* <h5 className='mt-0 text-2xl font-semibold leading-7 tracking-tight transition "${titleTxtColor}" hover:text-primary-600 dark:text-white'>{title}</h5> */}
           <h5
-            className={`mt-0 ${titleTxtSize} font-semibold tracking-tight leading-7 transition ${titleTxtColor} hover:text-primary-600 dark:text-white`}
+            className={`mt-0 ${titleTxtSize} ${titleClass} tracking-normalleading-7 transition ${titleTxtColor} hover:text-primary-600 dark:text-white`}
           >
             {title}
           </h5>
@@ -80,7 +80,7 @@ function Card({
         <div>
           {haveBody && (
             <p
-              className={`font-normal ${bodyTxtSize}  text-slate-600 dark:text-gray-400`}
+              className={`font-normal ${bodyClass}  text-slate-600 dark:text-gray-400`}
             >
               {body}
             </p>

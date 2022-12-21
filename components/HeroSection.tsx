@@ -24,25 +24,27 @@ export const HeroSection = () => {
 
   return (
     
-    <div className="temp-padding-inline flex mx-auto justify-center bg-backgroud-100">
-      <div className="max-w-[800px] block py-20">
-        <h1 className="text-primary-50">
+    <div className="temp-padding-inline flex mx-auto gap-x-56" id="hero-section">
+      <div className=" block py-20 space-y-12">
+        <h1 className="text-primary-100">
           Consult a doctor <br />
-          anytime,anywhere <br /> by{" "}
-          <a className="text-primary-100">videocall</a>
+          anytime, anywhere <br /> by{" "}
+          <a className="text-primary-50 underline">video call</a>
         </h1>
-        <h5 className="max-w-[600px] text-primary-200">
+        <p className="text-primary-100 lead opacity-75">
           Talk with a doctor using our highly secured HIPAA complaint end-to-end
           encrypted video call
-        </h5>
-        <AppButton btnColor="bg-primary-100" btnText="Ask A Doctor Online" btnTextColor="text-primary-300" type="button" clicked={(e:any) => setheroBtn(true)}/>
-        <AppButton btnColor="bg-white" btnText="Ask A Doctor Online" btnTextColor="text-primary-100" type="button" clicked={(e:any) => setheroBtn(true)}/>
+        </p>
+        <div className="btn-group space-x-6">
+          <AppButton className="shadow-lg" btnColor="bg-primary-50 hover:bg-primary-50 transition" btnText="Ask A Doctor Online" btnTextColor="text-primary-300" type="button" clicked={(e:any) => setheroBtn(true)}/>
+          <AppButton className="shadow-lg" btnColor="bg-white" btnText="Unlimited Chat" btnTextColor="text-primary-100" type="button" clicked={(e:any) => setheroBtn(true)}/>
+        </div>
       </div>
 
-      <div className="bg-primary px-[80px] flex">
+      <div className=" flex flex-col justify-end">
         <div className="self-end relative">
-        <AppButton btnColor="bg-white" btnText="2210 DOCTORS ONLINE" btnTextColor="text-black" type="button" className="absolute mt-[-20px]" clicked={(e:any) => setheroBtnSub(true)}/>
-        <img src="doctor-image.png" className="lg:h-[600px] lg:w-[650px] self-end ml-20"></img>
+        <AppButton btnColor="bg-white" btnText="2210 Doctors Online" btnTextColor="text-slate-900" type="button" className="absolute -top-20 -left-12 shadow-lg" clicked={(e:any) => setheroBtnSub(true)}/>
+        <img src="doctor-image.png" className="hero-img" />
         </div>
         
       </div>
