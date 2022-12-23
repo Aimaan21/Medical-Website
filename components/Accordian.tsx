@@ -11,22 +11,22 @@ export function Accordian({
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="flex justify-between w-full px-16 py-12 text-sm font-medium text-left text-primary-900 rounded hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
+            <Disclosure.Button className="flex justify-between w-full p-4 xl:px-16 xl:py-12 text-sm  font-light xl:font-medium text-left text-primary-900 rounded hover:bg-primary-200 focus:outline-none focus-visible:ring focus-visible:ring-primary-500 focus-visible:ring-opacity-75">
               <h4
-                className={`mt-0 text-2xl font-semibold leading-7 transition  text-primary-100 dark:text-white mr-1`}
+                className={`mt-0 w-[90%] md:text-lg lg:text-xl xl:text-2xl font-semibold leading-7 transition  text-primary-100 dark:text-white mr-1`}
               >
                 {title}
               </h4>
               <Icon
                 iconColor="bg-primary-50"
-                iconSize="35px"
+                iconSize="30px xl:35px"
                 iconName="chevron-down.png"
                 className={`${
                   open ? "transform rotate-180" : ""
                 } text-primary-500 p-2 bg-primary-50 rounded-full`}
               />
             </Disclosure.Button>
-            <Disclosure.Panel className="p-8 text-xl text-left  text-slate-600 font-normal">
+            <Disclosure.Panel className="xl:p-8 xl:text-xl text-left  text-slate-600 font-normal">
               {body}
             </Disclosure.Panel>
           </>

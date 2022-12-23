@@ -14,14 +14,17 @@ export function FAQ() {
           specialist
         </p>
       </div>
-      <div className="flex flex-row w-full">
-        <div className="px-40 text-center my-auto relative">
-          <div className="bg-secondary-50 rounded-full w-[550px] h-[550px] "></div>
-          <img src="faq-doctor.png" className="absolute top-[3%] left-[18%] h-[550px]" alt="" />
+      <div className="flex flex-row w-full ">
+        <div className=" text-center my-auto relative w-1/2">
+          {/* <div className="bg-secondary-50 rounded-full w-[550px] h-[550px] "></div> */}
+          <div className="bg-secondary-50 rounded-full lg:w-[30vw] lg:h-[30vw] mx-auto"></div>
+          {/* <img src="faq-doctor.png" className="absolute top-[3%] left-[18%] lg:h-[30vw]" alt="" />  for xl*/}
+          {/* <img src="faq-doctor.png" className="absolute top-[4%] left-[32%] lg:h-[30vw] mx-auto" alt="" /> */}
+          <img src="faq-doctor.png" className="absolute top-[4%] left-[32%] lg:h-[30vw] mx-auto" alt="" />
         
        
         </div>
-        <div className="w-1/2">
+        <div className="w-1/2 ">
             <Accordian title="What does telemedicine mean?"/>
             <Accordian title="What is telemedicine used for?"/>
             <Accordian title="What equipments do you require for telemedicine?"/>

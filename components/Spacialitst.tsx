@@ -3,8 +3,8 @@ import Card from "./Card";
 
 function Spacialitst() {
   return (
-    <div id="specialist" className="lg:py-24 xl:py-32">
-      <div className="flex flex-col items-center bg-backgroud-100">
+    <div id="specialist" className="py-16 md:py-24 xl:py-32">
+      <div className="px-2 flex flex-col items-center bg-backgroud-100">
         <div className="px-6 md:px-16 xl:max-w-[1000px]">
           <h1 className="my-8 text-3xl font-medium text-center xl:mb-4 xl:mt-24 md:text-5xl text-primary-100">
             Our Consulting specilaists
@@ -17,7 +17,7 @@ function Spacialitst() {
           </p>
         </div>
         {/* <div className="flex flex-wrap justify-center px-4 py-4"> */}
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-5 lg:grid-cols-4 lg:gap-6 2xl:grid-cols-6 2xl:gap-x-10 xl:px-8">
+        <div className="mb-8 xl:mb-24 xl:mt-8 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-5 lg:grid-cols-4 lg:gap-6 2xl:grid-cols-6 2xl:gap-x-10 xl:px-8">
           <Card
             haveBody={false}
             title="Dermatology"

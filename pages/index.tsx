@@ -13,9 +13,9 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   return (
    <>
-   <HeroSection />
-   <About/>
-   <OnlineChat/>
+   {/* <HeroSection /> */}
+   {/* <About/> */}
+   {/* <OnlineChat/> */}
    <Spacialitst/>
    <Article/>
    <FAQ/>

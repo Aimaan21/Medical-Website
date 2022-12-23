@@ -54,7 +54,7 @@ function Card({
     >
       <div className="relative">
         {hasImageTag && (
-          <p className="absolute px-4 py-1 mt-4 ml-4 text-xl font-thin text-white rounded-md backdrop-blur-md backdrop-grayscale bg-slate-300">
+          <p className="absolute  px-1 ml-4  mt-3 md:ml-2 md:mt-2 xl:px-4 xl:py-1 lg:mt-4 lg:ml-4 xl:ml-4 md:text-sm xl:text-xl font-thin text-white rounded-md backdrop-blur-md backdrop-grayscale bg-slate-300">
             {imageTagTxt}
           </p>
         )}
@@ -80,7 +80,7 @@ function Card({
         <div>
           {haveBody && (
             <p
-              className={`font-normal ${bodyClass}  text-slate-600 dark:text-gray-400`}
+              className={`  lg:font-normal ${bodyClass}  text-slate-600 dark:text-gray-400`}
             >
               {body}
             </p>
@@ -93,13 +93,13 @@ function Card({
       </div>
       {
 		hasFooter &&
-        <div className="w-full px-3">
+        <div className="w-full px-3 pb-2 lg:px-4 lg:pb-3 xl:px-6 xl:pb-3">
           
 		  <div className="flex items-center ">
-		  <Icon iconName="doctor-image.png" iconSize="40px" className="bg-pink-300 rounded-full" iconPositionAdjust="mt-[-20px]"></Icon>
-		  <div className="px-3">
-		  <h6 className="text-xl font-bold text-primary-50">{footerTitle}</h6>
-          <p className="text-slate-600">{footerBody}</p>
+		  <Icon iconName="doctor-image.png" iconSize="40px" className="bg-pink-300 rounded-full" iconPositionAdjust="mt-[-5px]"></Icon>
+		  <div className="px-1 lg:px-3">
+		  <h6 className="text-md lg:text-xl font-bold text-primary-50">{footerTitle}</h6>
+          <p className="text-sm text-slate-600">{footerBody}</p>
 		  </div>		  
 		  </div>
 		  

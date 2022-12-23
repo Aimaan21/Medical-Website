@@ -5,9 +5,9 @@ import Card from './Card'
 
 export function About() {
   return (
-    <div id="about-section" className="flex flex-col items-center w-full temp-padding-inline">
+    <div id="about-section" className="px-4 flex flex-col items-center w-full temp-padding-inline">
         <h1 className='max-w-[665px] text-3xl md:text-5xl font-medium text-primary-100 text-center mt-12 mb-10 lg:mt-24 lg:mb-20'>Why you should trust us? Get to know about us.</h1>
-        <div className="grid gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 ">
+        <div className="grid gap-4 md:grid-cols-2 md:gap-6 lg:gap-8 xl:grid-cols-4 xl:gap-10">
            <Card 
            title='All Specialist' 
            body='You can reach out to 3500+ doctors from 80+ specialist,who are experienced in telemedicine'
