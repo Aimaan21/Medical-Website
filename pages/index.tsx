@@ -7,15 +7,15 @@ import Article from '../components/Article'
 import FAQ from '../components/FAQ'
 import HeroSection from '../components/HeroSection'
 import OnlineChat from '../components/OnlineChat'
-import Spacialitst from '../components/Spacialitst'
+import Spacialitst from '../components/Specialist'
 import styles from '../styles/Home.module.css'
-
+// import 'tw-elements'
 export default function Home() {
   return (
    <>
-   {/* <HeroSection /> */}
-   {/* <About/> */}
-   {/* <OnlineChat/> */}
+   <HeroSection />
+   <About/>
+   <OnlineChat/>
    <Spacialitst/>
    <Article/>
    <FAQ/>

@@ -1,13 +1,14 @@
+import Image from "next/image"
 import React from "react"
 
-export default function Icon({ svgClass = "", iconColor = "currentColor", iconName = "activity", iconPos = "left", iconSize = "20px", iconStroke = "1.5", title = "", className = "",iconPositionAdjust='mt-[-8px]' }) {
+export default function Icon({ svgClass = "", iconColor = "currentColor", iconName = "activity", iconPos = "left", iconSize = "20px", iconStroke = "1.5", title = "", className = ""}) {
 	return (
 		<>
-			<span className="mr-4" title={title}>
-				<img
-					className={`${svgClass} inline-block ${className} ${iconPositionAdjust}`}
-					width={iconSize}
-					height={iconSize}
+			<span className="mr-1.5 md:mr-2 xl:mr-3 2xl:mr-4" title={title}>
+				{/* <img
+					className={`${svgClass} inline-block ${className}`}
+					// width={iconSize}
+					// height={iconSize}
                     src={`${iconName}`}
 					// fill="none"
 					// stroke={iconColor}
@@ -16,7 +17,8 @@ export default function Icon({ svgClass = "", iconColor = "currentColor", iconNa
 					// strokeLinejoin="round"
                     >
 					
-				</img>
+				</img> */}
+				{/* <Image width={20} height={10} src={`${iconName}`} alt="Picture of the author" className={`${svgClass} inline-block ${className}`}/> */}
 			</span>
 		</>
 	)

@@ -1,6 +1,6 @@
-@import './tailwind.css';
-@import './typeset.scss';
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap');
+@import "./tailwind.css";
+@import "./typeset.scss";
+// @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap");
 
 /* html {} 16px */
 
@@ -8,31 +8,72 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Outfit', sans-serif;
+  font-family: "Outfit", sans-serif;
   font-weight: 400;
   line-height: 1.75;
   font-size: 18px;
   overflow-x: hidden;
+  background: #FDFDFE;
+
 }
 
 * {
   box-sizing: border-box;
 }
 
+.nav-background-shade{
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(254, 243, 234, 1) 100%
+  );
+}
+
 #hero-section {
-  background: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(254,243,234,1) 100%);
-  img.hero-img {
-    transform: scale(1.25);
-    transform-origin: bottom left;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(254, 243, 234, 1) 100%
+  );
+  @media only screen and (min-width: 1441px) {
+    img.hero-img {
+      transform: scale(1.25);
+      transform-origin: bottom left;
+    }
+  }
+  @media only screen and (max-width: 1440px) {
+    img.hero-img {
+      transform: scale(1.5);
+      transform-origin: bottom right;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    img.hero-img {
+      transform: scale(1);
+      transform-origin: bottom;
+    }
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+#online-chat-section {
+  div.doctor-img-background {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 1) 28%,
+      rgba(163, 197, 228, 1) 91%
+    );
   }
 }
+#faq-section {
+  div.rounded-div-background {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 1) 26%,
+      rgba(244, 124, 140, 1) 82%
+    );
+  }
+}
+
+

@@ -4,7 +4,8 @@
 /* body */
 .temp-padding-inline{
     @apply
-    lg:px-24
+    xl:px-32
+    lg:px-20
 }
 /* nav bar */
 /* .padding-nav-inline{
