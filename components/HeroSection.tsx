@@ -62,7 +62,7 @@ export const HeroSection = () => {
             btnText="2210 Doctors Online"
             type="button"
             className=" bg-white text-slate-900 shadow-lg  absolute md:-left-[6vw] 
-            lg:left-[.5vw] xl:-left-[4vw] 2xl:-left-[4.5vw]"
+            lg:-left-[1vw] xl:-left-[4vw] 2xl:-left-[4.5vw]"
           />
 
       
@@ -70,8 +70,8 @@ export const HeroSection = () => {
             height={100}
             width={500}
             src="/doctor-image.png"
-            className="h-auto w-[42vw] max-w-[355px] lg:w-[50vw] 
-            lg:max-w-[450px] xl:w-[42vw] xl:max-w-[530px]  2xl:w-[31vw] 2xl:max-w-[600px]"
+            className="h-auto w-[42vw] max-w-[355px] lg:w-[45vw] 
+            lg:max-w-[400px] xl:w-[42vw] xl:max-w-[530px]  2xl:w-[31vw] 2xl:max-w-[600px]"
             // className="h-auto w-[42vw] max-w-[350px] lg:max-w-[450px] lg:ml-10 lg:w-[50vw] xl:w-[42vw] xl:max-w-[500px] 2xl:w-[31vw]"
             alt="default img"
           />

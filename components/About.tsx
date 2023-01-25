@@ -5,7 +5,7 @@ export function About() {
   return (
     <div
       id="about-section"
-      className="flex w-full flex-col items-center md:px-8 lg:px-20 xl:px-32"
+      className="flex w-full flex-col items-center md:px-8 lg:px- xl:px-16 2xl:px-32"
     >
       {/* for medium...... screen */}
       <h2 className="hidden md:block mt-12 mb-10 max-w-[550px] text-center tracking-wide font-medium text-secondary-500  lg:mt-24 lg:mb-20">
