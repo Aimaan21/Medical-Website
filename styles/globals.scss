@@ -13,7 +13,11 @@ body {
   line-height: 1.75;
   font-size: 18px;
   overflow-x: hidden;
-  background: #FDFDFE;
+  // background: #F1F5F9;
+  // background: #fcfcfc;
+  --tw-bg-opacity: .3;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  scroll-behavior: smooth;
 
 }
 

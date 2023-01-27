@@ -29,16 +29,25 @@ export function Article() {
         
           title="How to decrease the level of adipose in the body?"
           titleClassname="text-2xl md:text-xl lg:text-2xl text-left text-secondary-500"
-          cardClassName="pt-0 max-w-[450px] rounded-t-3xl"
+          cardClassName="pt-0 max-w-[450px] rounded-t-3xl bg-cardWrap-50"
     
           body="Serum or blood creatinin gives an idea about renal health. Creatinine phosphet is made wit three diffrent types of amino acid such as arginine, metheonine and glycine"
           bodyClass="my-5 md:text-sm lg:text-lg text-left"
+          
           hasImageTag={true}
           imageTagTxt="Infectous"
+          
+          hasDateTag={true}
+          iconName="/icon-phone.svg"
+          dateTagTxt1="15 June"
+          dateTagTxt2="54"
+          dateTagTxt3="1.9k"
+
           hasFooter={true}
           footerTitle="Dr. Aimaan Amin Nobin"
           footerBody="Neurologist"
           footerClass=""
+          
           contentClass="my-6"
         ></Card>
         <Card
@@ -48,16 +57,27 @@ export function Article() {
           
           title="How to decrease the level of adipose in the body?"
           titleClassname="text-2xl md:text-xl lg:text-2xl text-left text-secondary-500"
-          cardClassName="pt-0 max-w-[450px] rounded-t-3xl"
+          cardClassName="pt-0 max-w-[450px] rounded-t-3xl bg-cardWrap-50"
          
           body="Serum or blood creatinin gives an idea about renal health. Creatinine phosphet is made wit three diffrent types of amino acid such as arginine, metheonine and glycine"
           bodyClass="my-5 md:text-sm lg:text-lg text-left"
+          
           hasImageTag={true}
           imageTagTxt="Infectous"
+          
+          hasDateTag={true}
+          iconName="/icon-phone.svg"
+          dateTagTxt1="15 June"
+          dateTagTxt2="54"
+          dateTagTxt3="1.9k"
+          
+          
+
           hasFooter={true}
           footerTitle="Dr. Mehrab"
           footerBody="Neurologist"
           footerClass=""
+          
           contentClass="my-6"
         ></Card>
          <Card
@@ -67,16 +87,25 @@ export function Article() {
         
           title="How to decrease the level of adipose in the body?"
           titleClassname="text-2xl md:text-xl lg:text-2xl text-left text-secondary-500"
-          cardClassName="pt-0 max-w-[450px] rounded-t-3xl"
+          cardClassName="pt-0 max-w-[450px] rounded-t-3xl bg-cardWrap-50"
         
           body="Serum or blood creatinin gives an idea about renal health. Creatinine phosphet is made wit three diffrent types of amino acid such as arginine, metheonine and glycine"
-          bodyClass="my-5 md:text-sm lg:text-lg text-left"
+          bodyClass="my-5 md:text-sm lg:text-lg text-left "
+          
           hasImageTag={true}
           imageTagTxt="Infectous"
+          
+          hasDateTag={true}
+          iconName="/icon-phone.svg"
+          dateTagTxt1="15 June"
+          dateTagTxt2="54"
+          dateTagTxt3="1.9k"
+
           hasFooter={true}
           footerTitle="Dr. Mehrab"
           footerBody="Neurologist"
           footerClass=""
+          
           contentClass="my-6"
         ></Card>
       </div>

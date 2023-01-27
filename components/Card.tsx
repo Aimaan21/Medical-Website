@@ -15,11 +15,11 @@ export interface cardModel {
   contentClass?: string;
   footerClass?: string;
   hasFooter?: boolean;
-  // btnColor?: string
+
 }
 
 function Card({
-  // cardClassName = "bg-white pt-4 lg:pt-8 rounded-2xl text-center",
+ 
   cardClassName = "",
 
   contentClass = "px-2 py-2 lg:py-4 lg:px-4",
@@ -34,6 +34,13 @@ function Card({
   hasImage = true,
   imgSrc = "//favicon.ico",
   imgClassName = "h-10 md:h-15 lg:h-20",
+
+  hasDateTag = false,
+  iconName="",
+  dateTagClassName = "h-10 md:h-15 lg:h-20",
+  dateTagTxt1="",
+  dateTagTxt2="",
+  dateTagTxt3="",
  
   hasImageTag = false,
   imageTagTxt = "default",
@@ -46,10 +53,10 @@ function Card({
   
 }) {
   return (
-    // <div className="flex flex-col items-center max-w-sm pt-8 mx-6 text-center bg-white rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+  
     <div
-      className={`lg:min-w-[220px] lg:max-w-[380px] 2xl:max-w-[450px]  hover:bg-white dark:border-gray-700 dark:bg-gray-800 bg-white pt-4 lg:pt-8 rounded-2xl text-center ${cardClassName}`}
-      // className={`lg:min-w-[220px] lg:max-w-[380px] 2xl:max-w-[350px]  hover:bg-white dark:border-gray-700 dark:bg-gray-800 bg-white pt-4 lg:pt-8 rounded-2xl text-center ${cardClassName}`}
+      className={`lg:min-w-[220px] lg:max-w-[380px] 2xl:max-w-[450px]  hover:bg-white dark:border-gray-700 dark:bg-gray-800 bg-white  text-center ${cardClassName}`}
+      
     >
       <div className="relative">
         {hasImageTag && (
@@ -62,17 +69,34 @@ function Card({
           <Image
             width={300}
             height={300}
-            // className={`w-max rounded-t-lg object-cover object-center lg:pt-5 ${imgWidth} ${imgBgColor} ${imgClassName}`}
+           
             className={`rounded-t-lg object-cover object-center lg:pt-5  ${imgClassName}`}
             src={`${imgSrc} `}
             alt=""
           />
         )}
+        {hasDateTag && (
+          <div className="flex space-x-2 items-center absolute top-[80%] md:top-[22.4vw] lg:top-[24vw] xl:top-[310px] 2xl:top-[370px] ml-4 mt-3  rounded-md bg-white px-2 md:px-1 md:py-1 md:text-xs font-normal text-blue md:ml-2 md:mt-2  lg:mt-4 lg:ml-4 xl:ml-4 lg:px-3 2xl:px-4 xl:py-1 text-sm">
+            <div className="">
+            <Icon iconName={`${iconName}`} className='object-cover w-auto h-4 mb-1 md:h-4' wrapperClassName="mr-2"></Icon>
+            {dateTagTxt1}
+            </div>
+           <div className="">
+           <Icon iconName={`${iconName}`} className='object-cover w-auto h-4 mb-1 md:h-4' wrapperClassName="mr-2"></Icon>
+            {dateTagTxt2}
+           </div>
+            <div className="">
+            <Icon iconName={`${iconName}`} className='object-cover w-auto h-4 mb-1 md:h-4' wrapperClassName="mr-2"></Icon>
+            {dateTagTxt3}
+            </div>
+            
+          </div>
+        )}
       </div>
 
       <div className={`${contentClass}`}>
-        <a href="#">
-          {/* <h5 className='mt-0 text-2xl font-semibold leading-7 tracking-tight transition "${titleTxtColor}" hover:text-primary-600 dark:text-white'>{title}</h5> */}
+        <a >
+         
           <h5
             className={`mt-0  ${titleClassname} leading-7 tracking-normal transition  hover:text-primary-600 dark:text-white`}
           >
@@ -91,12 +115,12 @@ function Card({
         {hasFooter && <hr className="w-full" />}
       </div>
       {hasFooter && (
-        // <div className={`flex justify-start ${footerClass}`}>
-          <div className={`flex items-center test-left ${footerClass}`}>
+     
+          <div className={`flex items-center text-left pb-5 ${footerClass}`}>
             <Icon
               iconName="/doctor-image.png"
               className="h-10 w-10 rounded-full bg-pink-300 object-cover"
-            ></Icon>
+            />
             <div className="px-1 lg:px-3 text-left">
               <h6 className="font-bold text-secondary-500 ">
                 {footerTitle}
@@ -104,7 +128,7 @@ function Card({
               <p className="text-sm text-primary-700/60">{footerBody}</p>
             </div>
           </div>
-        // </div>
+       
       )}
     </div>
   );

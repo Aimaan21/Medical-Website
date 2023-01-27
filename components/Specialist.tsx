@@ -3,14 +3,14 @@ import Card from "./Card";
 
 function Spacialitst() {
   return (
-    <div id="specialist" className="py-16 md:py-24 xl:py-32">
+    <div id="specialist" className="py-16 md:py-24 xl:py-16">
       <div className="flex flex-col items-center bg-backgroud-100 px-2 lg:px-12">
         <div className="px-2 md:px-16 xl:max-w-[1000px]">
           <h2 className="hidden md:block my-8 text-center tracking-wide font-medium text-secondary-500 xl:mb-4 xl:mt-16">
-            Our Consulting specialities
+            Our Consulting Specialities
           </h2>
           <h4 className="md:hidden block my-8 text-center tracking-wide font-medium text-secondary-500">
-            Our Consulting specialities
+            Our Consulting Specialities
           </h4>
           {/* <h1 className="my-8 text-center text-3xl font-medium text-secondary-500 md:text-5xl xl:mb-4 xl:mt-24">
             Our Consulting specialists

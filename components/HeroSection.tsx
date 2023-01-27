@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import ActiveButton from "./ActiveButton";
 import AppButton from "./AppButton";
 
 export const HeroSection = () => {
@@ -20,11 +21,15 @@ export const HeroSection = () => {
 
   return (
     
+    // <div
+    //   className=" flex 2xl:justify-center px-[4vw]  md:px-[2.5vw] lg:pl-[4vw] xl:pl-[5.5vw] lg:px-0 2xl:pl-[8vw] 2xl:pr-[6vw] "
+    //   id="hero-section"
+    // >
     <div
-      className=" flex justify-center px-[4vw]  md:px-[2.5vw] lg:px-[3vw] xl:px-[8vw] 2xl:pl-[8vw] 2xl:pr-[6vw] 2xl:px-0 "
+      className=" flex justify-center px-[1vw] md:pl-[3vw] lg:pl-[3.5%] xl:pl-[5.5vw] md:px-0 2xl:pl-[8vw] 2xl:pr-[6vw] "
       id="hero-section"
     >
-      <div className="flex flex-col items-center space-y-4 py-6 md:block md:space-y-8 md:py-10 lg:space-y-12 lg:py-20 2xl:mr-[14vw]">
+      <div className="flex flex-col items-center space-y-4 py-6 md:block md:space-y-8 lg:space-y-12 lg:py-10 lg:mr-[3vw] xl:mr-[7.5vw] 2xl:py-20 2xl:mr-[14vw]">
         <h1 className=" text-center text-secondary-500 max-w-[15ch] md:w-[15ch] 
         md:text-left lg:w-[15ch] xl:w-[15ch]">
           Consult a doctor anytime, anywhere by{" "}
@@ -55,14 +60,15 @@ export const HeroSection = () => {
       </div>
 
    
-      <div className="hidden md:flex">
+      <div className="hidden md:flex pl-[1rem]">
         <div className="relative self-end">
     
-          <AppButton
+          <ActiveButton
+          
             btnText="2210 Doctors Online"
             type="button"
-            className=" bg-white text-slate-900 shadow-lg  absolute md:-left-[6vw] 
-            lg:-left-[1vw] xl:-left-[4vw] 2xl:-left-[4.5vw]"
+            className=" bg-white text-slate-900 shadow-lg  absolute md:-left-[10vw] md:-top-[2vw] lg:top-0
+            lg:-left-[2vw] xl:-left-[6vw] 2xl:-left-[4.5vw]"
           />
 
       
@@ -70,8 +76,8 @@ export const HeroSection = () => {
             height={100}
             width={500}
             src="/doctor-image.png"
-            className="h-auto w-[42vw] max-w-[355px] lg:w-[45vw] 
-            lg:max-w-[400px] xl:w-[42vw] xl:max-w-[530px]  2xl:w-[31vw] 2xl:max-w-[600px]"
+            className="h-auto w-[35vw] max-w-[300px] lg:w-[40vw] 
+            lg:max-w-[450px] xl:w-[42vw] xl:max-w-[480px]  2xl:w-[31vw] 2xl:max-w-[600px]"
             // className="h-auto w-[42vw] max-w-[350px] lg:max-w-[450px] lg:ml-10 lg:w-[50vw] xl:w-[42vw] xl:max-w-[500px] 2xl:w-[31vw]"
             alt="default img"
           />
