@@ -1,5 +1,6 @@
 import Head from "next/head";
 import AppButton from "./AppButton";
+import Foot from "./Foot";
 import Footer from "./Footer";
 import   Nav  from './Nav';
 // import 'tw-elements'
@@ -13,10 +14,10 @@ export const Layout = ({ children }: any) => {
         <title>Doctor Consultation</title>
         <meta name="keyword" content="Medical Website Landing Page" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600&display=swap"
           rel="stylesheet"
-        />
+        /> */}
       </Head>
 
 
@@ -26,7 +27,8 @@ export const Layout = ({ children }: any) => {
         <Nav/>
         
           {children}
-        <Footer/>
+        {/* <Footer/> */}
+        <Foot/>
         </main>
         {/* <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script> */}
         {/* <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js" async/> */}
