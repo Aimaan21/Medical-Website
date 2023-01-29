@@ -39,6 +39,15 @@ body {
     rgba(255, 255, 255, 1) 0%,
     rgba(254, 243, 234, 1) 100%
   );
+
+
+  @media only screen and (min-width: 1536px) and (max-width:1750px) {
+  
+    .active-button-position{
+      left: -7vw;
+    }
+    // top:68.5vw
+  }
   @media only screen and (min-width: 1441px) {
     img.hero-img {
       transform: scale(1.25);
@@ -80,4 +89,53 @@ body {
   }
 }
 
+
+.date-tag-position{
+ 
+  top:59.5vw;
+  @media only screen and (min-width: 320px) and (max-width:380px) {
+   
+     top:clamp(63.5vw,64.5vw,69.5vw);
+  }
+  @media only screen and (min-width: 381px) and (max-width:419px) {
+  
+    top:68.5vw
+  }
+  @media only screen and (min-width: 420px) and (max-width:500px) {
+    
+     top:clamp(63vw,70.5vw,max(72.5vw,15rem));
+  }
+  @media only screen and (min-width: 501px) and (max-width:767px) {
+    top: 365px;
+  }
+  @media only screen and (min-width: 768px) and (max-width:868px) {
+    top: calc( 22vw);
+  }
+  @media only screen and (min-width: 869px) and (max-width:949px) {
+    top: calc( 22.5vw);
+  }
+  @media only screen and (min-width: 950px) and (max-width:1023px) {
+    top: calc( 24vw);
+  }
+  // @media only screen and (min-width: 850px) {
+  //   top: calc( 23vw);
+  // }
+  @media only screen and  (min-width: 1024px) and (max-width:1100px)  {
+    top: calc(1% + 24vw);
+  }
+  @media only screen and  (min-width: 1101px) and (max-width:1179px)  {
+    top: 24.5VW;
+  }
+  @media only screen and  (min-width: 1180px) and (max-width:1279px)  {
+    top: 25VW;
+  }
+ 
+  @media only screen and (min-width: 1280px) {
+    top: 315px;
+  }
+  @media only screen and (min-width: 1536px) {
+    top: 370px;
+  }
+ 
+}
 

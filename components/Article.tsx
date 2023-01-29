@@ -36,11 +36,14 @@ export function Article() {
           
           hasImageTag={true}
           imageTagTxt="Infectous"
+          imageTagClasName="bg-slate-400/80 text-white"
           
           hasDateTag={true}
-          iconName="/icon-phone.svg"
+          dateIconName1="/birthday-cake.png"
           dateTagTxt1="15 June"
+          dateIconName2="/signal.png"
           dateTagTxt2="54"
+          dateIconName3="/view.png"
           dateTagTxt3="1.9k"
 
           hasFooter={true}
@@ -64,11 +67,15 @@ export function Article() {
           
           hasImageTag={true}
           imageTagTxt="Infectous"
+          imageTagClasName="bg-slate-400/80 text-white"
+
           
           hasDateTag={true}
-          iconName="/icon-phone.svg"
+          dateIconName1="/birthday-cake.png"
           dateTagTxt1="15 June"
+          dateIconName2="/signal.png"
           dateTagTxt2="54"
+          dateIconName3="/view.png"
           dateTagTxt3="1.9k"
           
           
@@ -94,11 +101,16 @@ export function Article() {
           
           hasImageTag={true}
           imageTagTxt="Infectous"
+          imageTagClasName="bg-rose-400/20 text-rose-900"
+
           
           hasDateTag={true}
-          iconName="/icon-phone.svg"
+          dateIconName1="/birthday-cake.png"
           dateTagTxt1="15 June"
+          dateIconName2="/signal.png"
           dateTagTxt2="54"
+          dateIconName3="/view.png"
+
           dateTagTxt3="1.9k"
 
           hasFooter={true}

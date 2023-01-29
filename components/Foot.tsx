@@ -1,3 +1,4 @@
+import  IconButton  from "./IconButton";
 import AppButton from "./AppButton";
 
 export default function Foot() {
@@ -20,20 +21,24 @@ export default function Foot() {
           <p className="twxt-lg w-[25ch]">
             Talk with a doctor using our highly end-to-end encrypted
           </p>
-          <div className="btn-group">
-            <AppButton
-              className="bg-primary-500 text-sm text-btn-200 shadow-lg transition hover:bg-secondary-500"
-              btnText="Ask A "
-              // btnTextColor="text-btn-200"
-              type="button"
+          <div className="btn-group flex space-x-4 
+          lg:flex-col lg:space-x-0 lg:space-y-4 
+          xl:space-x-4 xl:flex-row xl:space-y-0">
+            
+            <IconButton
+            className="bg-primary-500 text-btn-200 shadow-lg rounded-lg hover:bg-secondary-500"
+            iconName="/apple.png"
+            primaryText="Download on the"
+            headerText="Apple store"
             />
-            <AppButton
-              className="bg-white text-secondary-500 shadow-lg"
-              // btnColor="bg-white"
-              btnText="Unlimite"
-              // btnTextColor="text-secondary-500"
-              type="button"
+            <IconButton
+            className="bg-white text-secondary-500 shadow-lg rounded-lg"
+            iconName="/playstore.png"
+            primaryText="Get it from"
+            headerText="Google Play"
             />
+            
+            
           </div>
         </div>
         <div id="footer-col-2">
@@ -171,19 +176,18 @@ export default function Foot() {
           <p className="twxt-lg w-[25ch]">
             Talk with a doctor using our highly end-to-end encrypted
           </p>
-          <div className="btn-group">
-            <AppButton
-              className="bg-primary-500 text-sm text-btn-200 shadow-lg transition hover:bg-secondary-500"
-              btnText="Ask A "
-              // btnTextColor="text-btn-200"
-              type="button"
+          <div className="btn-group flex space-x-4">
+          <IconButton
+            className="bg-primary-500 text-btn-200 shadow-lg rounded-lg hover:bg-secondary-500"
+            iconName="/apple.png"
+            primaryText="Download on the"
+            headerText="Apple store"
             />
-            <AppButton
-              className="bg-white text-secondary-500 shadow-lg"
-              // btnColor="bg-white"
-              btnText="Unlimite"
-              // btnTextColor="text-secondary-500"
-              type="button"
+            <IconButton
+            className="bg-white text-secondary-500 shadow-lg rounded-lg"
+            iconName="/playstore.png"
+            primaryText="Get it from"
+            headerText="Google Play"
             />
           </div>
         </div>

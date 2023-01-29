@@ -36,14 +36,18 @@ function Card({
   imgClassName = "h-10 md:h-15 lg:h-20",
 
   hasDateTag = false,
-  iconName="",
+  
   dateTagClassName = "h-10 md:h-15 lg:h-20",
+  dateIconName1="",
   dateTagTxt1="",
+  dateIconName2="",
   dateTagTxt2="",
+  dateIconName3="",
   dateTagTxt3="",
  
   hasImageTag = false,
   imageTagTxt = "default",
+  imageTagClasName = "",
   
   hasFooter = false,
   footerTitle = "Default title",
@@ -60,7 +64,14 @@ function Card({
     >
       <div className="relative">
         {hasImageTag && (
-          <p className="absolute  ml-4 mt-3  rounded-md bg-slate-400 px-2 md:px-1 md:py-1 md:text-xs font-thin text-white backdrop-blur-md backdrop-grayscale md:ml-2 md:mt-2  lg:mt-4 lg:ml-4 xl:ml-4 lg:px-3 2xl:px-4 xl:py-1 lg:text-base 2xl:text-xl opacity-60">
+          <p className={`absolute  ml-4 mt-3  rounded-md px-2  backdrop-blur-md backdrop-grayscale 
+          md:px-1 md:py-1 md:text-xs md:ml-2 md:mt-2  
+          lg:mt-4 lg:ml-4 lg:text-base lg:px-3
+          xl:ml-4 xl:py-1
+          2xl:px-4 2xl:text-xl 
+          ${imageTagClasName}`}>
+          {/* <p className={`absolute  ml-4 mt-3  rounded-md bg-slate-400 px-2 md:px-1 md:py-1 md:text-xs font-thin text-white backdrop-blur-md backdrop-grayscale md:ml-2 md:mt-2  lg:mt-4 lg:ml-4 xl:ml-4 lg:px-3 2xl:px-4 xl:py-1 lg:text-base 2xl:text-xl opacity-60
+          ${imageTagClasName}`}> */}
             {imageTagTxt}
           </p>
         )}
@@ -76,17 +87,28 @@ function Card({
           />
         )}
         {hasDateTag && (
-          <div className="flex space-x-2 items-center absolute top-[80%] md:top-[22.4vw] lg:top-[24vw] xl:top-[310px] 2xl:top-[370px] ml-4 mt-3  rounded-md bg-white px-2 md:px-1 md:py-1 md:text-xs font-normal text-blue md:ml-2 md:mt-2  lg:mt-4 lg:ml-4 xl:ml-4 lg:px-3 2xl:px-4 xl:py-1 text-sm">
+          <div  className="date-tag-position flex space-x-3 items-center absolute  ml-4 mt-3  rounded-md bg-white px-2 py-1 font-normal text-blue text-sm
+          md:px-2  md:text-xs md:ml-2 md:mt-2 
+          lg:mt-4 lg:ml-4 lg:px-3 
+          xl:ml-4 xl:py-2
+          2xl:px-4 2xl:text-base">
+          {/* <div  className="date-tag-position flex space-x-2 items-center absolute top-[80%]  ml-4 mt-3  rounded-md bg-white px-2 font-normal text-blue text-sm
+          md:px-1 md:py-1 md:text-xs md:ml-2 md:mt-2  md:top-[21.5vw] 
+          lg:mt-4 lg:ml-4 lg:px-3 
+          xl:ml-4 xl:py-1 xl:top-[310px] 
+          2xl:px-4 2xl:top-[370px]  "> */}
             <div className="">
-            <Icon iconName={`${iconName}`} className='object-cover w-auto h-4 mb-1 md:h-4' wrapperClassName="mr-2"></Icon>
+            <Icon iconName={`${dateIconName1}`} className='object-cover w-auto mb-1 h-4 md:h-3 2xl:h-4' wrapperClassName="mr-2"></Icon>
             {dateTagTxt1}
             </div>
            <div className="">
-           <Icon iconName={`${iconName}`} className='object-cover w-auto h-4 mb-1 md:h-4' wrapperClassName="mr-2"></Icon>
+           <Icon iconName={`${dateIconName2}`} className='object-cover w-auto h-4 mb-1 md:h-3
+           2xl:h-4' wrapperClassName="mr-2"></Icon>
             {dateTagTxt2}
            </div>
             <div className="">
-            <Icon iconName={`${iconName}`} className='object-cover w-auto h-4 mb-1 md:h-4' wrapperClassName="mr-2"></Icon>
+            <Icon iconName={`${dateIconName3}`} className='object-cover w-auto h-4 mb-1 md:h-3
+            2xl:h-4' wrapperClassName="mr-2"></Icon>
             {dateTagTxt3}
             </div>
             

@@ -25,7 +25,7 @@ function Spacialitst() {
         {/* <div className="flex flex-wrap justify-center px-4 py-4"> */}
         <div className="mb-8 grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-5 lg:grid-cols-4 lg:gap-6 xl:mb-24 xl:mt-8 xl:px-8 2xl:grid-cols-6 2xl:gap-x-10">
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Dermatology"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -34,7 +34,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px] h-10  md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Internal Medicine"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -42,7 +42,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px]  h-10 md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Gastroenterology"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -50,7 +50,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px]  h-10 md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Infectous Disease"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -58,7 +58,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px]  h-10 md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Dermatology"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -66,7 +66,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px]  h-10 md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Dermatology"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -74,7 +74,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px]  h-10 md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Dermatology"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -82,7 +82,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px]  h-10 md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Dermatology"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -90,7 +90,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px]  h-10 md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Dermatology"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -98,7 +98,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px]  h-10 md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Dermatology"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -106,7 +106,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px]  h-10 md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Dermatology"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"
@@ -114,7 +114,7 @@ function Spacialitst() {
             imgClassName="mx-auto w-max lg:w-[70px]  h-10 md:h-15 lg:h-20"
           />
           <Card
-            cardClassName="hover:bg-[#FCE9DA]"
+            cardClassName="hover:bg-[#FCE9DA] rounded-lg"
             haveBody={false}
             title="Dermatology"
             titleClassname="text-sm md:text-md lg:text-xl text-secondary-500"

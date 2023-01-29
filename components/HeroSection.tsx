@@ -67,7 +67,7 @@ export const HeroSection = () => {
           
             btnText="2210 Doctors Online"
             type="button"
-            className=" bg-white text-slate-900 shadow-lg  absolute md:-left-[10vw] md:-top-[2vw] lg:top-0
+            className="active-button-position bg-white text-slate-900 shadow-lg  absolute md:-left-[10vw] md:-top-[2vw] lg:top-0
             lg:-left-[2vw] xl:-left-[6vw] 2xl:-left-[4.5vw]"
           />
 

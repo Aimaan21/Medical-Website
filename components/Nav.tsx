@@ -104,7 +104,7 @@ export default function Example() {
           className="mr-4 ml-2 cursor-pointer hidden xl:hidden lg:flex flex-col py-1.5 font-medium lg:text-base text-secondary-500"
         >
           <span className="">Call now</span>
-          <span>01648309985</span>
+          <span>(+880) 1648309985</span>
         </Typography>
         </div>
         {/* <Typography
@@ -125,7 +125,7 @@ export default function Example() {
           className="mr-4 cursor-pointer hidden xl:flex flex-col py-1.5 font-medium lg:text-base text-secondary-500"
         >
           <span className="">Call now</span>
-          <span>01648309985</span>
+          <span>(+880) 1648309985</span>
         </Typography>
         
         <AppButton btnText="Log In" className="bg-white hidden lg:inline-block font-medium lg:text-base text-primary-500"></AppButton>
@@ -173,7 +173,7 @@ export default function Example() {
       <MobileNav className="" open={openNav}>
         <div className="mt-3">
         {navList}
-        <AppButton btnText="Log In" className=" lg:hidden  my-4 ml-1 inline-block font-medium lg:text-base text-primary-500 bg-white"></AppButton>
+        <AppButton btnText="Log In" className=" lg:hidden ml-1 inline-block font-medium lg:text-base text-primary-500 bg-white"></AppButton>
         </div>
        
        
