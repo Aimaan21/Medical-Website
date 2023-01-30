@@ -2,6 +2,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import ActiveButton from "./ActiveButton";
 import AppButton from "./AppButton";
+import { motion, useAnimation } from "framer-motion";
+
+import { useInView } from "react-intersection-observer";
+
 
 export const HeroSection = () => {
   const [heroBtn, setheroBtn] = useState(false);
@@ -21,11 +25,10 @@ export const HeroSection = () => {
 
   return (
     
-    // <div
-    //   className=" flex 2xl:justify-center px-[4vw]  md:px-[2.5vw] lg:pl-[4vw] xl:pl-[5.5vw] lg:px-0 2xl:pl-[8vw] 2xl:pr-[6vw] "
-    //   id="hero-section"
-    // >
-    <div
+
+    <motion.div
+    animate={{ x: 0 }}
+    initial={{ x: -1000 }}
       className=" flex justify-center px-[1vw] md:pl-[3vw] lg:pl-[3.5%] xl:pl-[5.5vw] md:px-0 2xl:pl-[8vw] 2xl:pr-[6vw] "
       id="hero-section"
     >
@@ -83,7 +86,7 @@ export const HeroSection = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
